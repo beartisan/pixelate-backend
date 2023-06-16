@@ -1,0 +1,23 @@
+{
+  "name": "pixelate-backend",
+  "version": "1.0.0",
+  "description": "Front-End Code for the Back-end Page of Pixelate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beartisan/pixelate-backend.git"
+  },
+  "keywords": [
+    "back-end",
+    "design"
+  ],
+  "author": "Beatrice Tan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beartisan/pixelate-backend/issues"
+  },
+  "homepage": "https://github.com/beartisan/pixelate-backend#readme"
+}
