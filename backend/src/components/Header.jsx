@@ -8,26 +8,12 @@ export default function Header() {
       <nav>
         <ul id="navbar" className="navbar">
           <li className="nav-item">
-            <a href="#sec-about">About BRICKMMO</a>
+            <a href="#sec-about">Log-In</a>
           </li>
           <li className="nav-item">
-            <a href="#sec-purchase">Buy LEGO</a>
+            <a href="#sec-purchase">Sign-In</a>
           </li>
-          <li className="nav-item">
-            <a href="#sec-socmed">
-              <i className="fa-brands fa-twitter"></i>{" "}
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#sec-socmed">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#sec-socmed">
-              <i className="fa-brands fa-tiktok"></i>
-            </a>
-          </li>
+         
         </ul>
       </nav>
     </header>
