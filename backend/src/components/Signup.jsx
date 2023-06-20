@@ -55,75 +55,79 @@ export default function Signup() {
 
   return (
     <section id="signup">
-      <div className="section-container">
-        <div className="signup-form">
-          <h2 className="title">Create an Account</h2>
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="firstName">First Name:</label>
-              <input
-                type="text"
-                id="firstName"
-                value={firstName}
-                onChange={handleFirstNameChange}
-                placeholder="Enter your First Name"
-                className="input-field"
-              />
+    <div className="section-container">
+      <div className="signup-form">
+        <h2 className="title">Create an Account</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <div className="name-group">
+              <div className="name-field">
+                <label htmlFor="firstName">First Name:</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  value={firstName}
+                  onChange={handleFirstNameChange}
+                  placeholder="Enter your First Name"
+                  className="input-field with-border"
+                />
+              </div>
+              <div className="name-field">
+                <label htmlFor="lastName">Last Name:</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  value={lastName}
+                  onChange={handleLastNameChange}
+                  placeholder="Enter your last name"
+                  className="input-field with-border"
+                />
+              </div>
             </div>
-            <div className="form-group">
-              <label htmlFor="lastName">Last Name:</label>
-              <input
-                type="text"
-                id="lastName"
-                value={lastName}
-                onChange={handleLastNameChange}
-                placeholder="Enter your last name"
-                className="input-field"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="userName">Username:</label>
-              <input
-                type="text"
-                id="userName"
-                value={userName}
-                onChange={handleUserNameChange}
-                placeholder="Enter your username"
-                className="input-field"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={handleEmailChange}
-                placeholder="email@address.com"
-                className="input-field"
-              />
-              {!isValidEmail && <p className="error">Please enter a valid email</p>}
-            </div>
-            <div className="form-group">
-              <label htmlFor="password">Password:</label>
-              <input
-                type="password"
-                id="password"
-                value={password}
-                onChange={handlePasswordChange}
-                placeholder="Enter your password"
-                className="input-field"
-              />
-              {!isValidPassword && (
-                <p className="error">
-                  Password must contain at least one uppercase letter, one lowercase letter, and one number.
-                </p>
-              )}
-            </div>
-            <button type="submit">Sign Up</button>
-          </form>
-        </div>
+          </div>
+          <div className="form-group">
+            <label htmlFor="userName">Username:</label>
+            <input
+              type="text"
+              id="userName"
+              value={userName}
+              onChange={handleUserNameChange}
+              placeholder="Enter your username"
+              className="input-field with-border"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={handleEmailChange}
+              placeholder="email@address.com"
+              className="input-field"
+            />
+            {!isValidEmail && <p className="error">Please enter a valid email</p>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              value={password}
+              onChange={handlePasswordChange}
+              placeholder="Enter your password"
+              className="input-field"
+            />
+            {!isValidPassword && (
+              <p className="error">
+                Password must contain at least one uppercase letter, one lowercase letter, and one number.
+              </p>
+            )}
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 }

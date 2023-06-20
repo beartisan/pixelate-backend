@@ -121,7 +121,9 @@ p {
 }
 
 .signup-form, .login-form {
-  max-width: 600px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: white;
   padding: 100px;
   border-radius: 8px;
@@ -147,6 +149,15 @@ label {
   font-size: 16px;
   margin-bottom: 5px;
   font-family: "Montserrat", sans-serif;
+}
+
+.name-group {
+  display: flex;
+  gap: 10px;
+}
+
+.name-field {
+  flex: 1;
 }
 
 input[type="email"], input[type="text"],
@@ -259,3 +270,25 @@ button[type="submit"]:hover {
 
 
 /* MEDIA QUERIES */
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+  .signup-form {
+    padding: 50px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-field,
+  button[type="submit"] {
+    width: 100%;
+  }
+
+  .name-group {
+    flex-direction: column;
+  }
+
+}
