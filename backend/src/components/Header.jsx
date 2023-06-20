@@ -1,5 +1,6 @@
-// import React from "react";
-export default function Header() {
+import React from "react";
+
+export default function Header({ handleLoginClick, handleSignupClick }) {
   return (
     <header id="header">
       <h2 id="site-name">
@@ -8,12 +9,15 @@ export default function Header() {
       <nav>
         <ul id="navbar" className="navbar">
           <li className="nav-item">
-            <a href="#sec-about">Log-In</a>
+            <a href="#" onClick={handleLoginClick}>
+              Log-In
+            </a>
           </li>
           <li className="nav-item">
-            <a href="#sec-purchase">Sign-In</a>
+            <a href="#" onClick={handleSignupClick}>
+              Sign-Up
+            </a>
           </li>
-         
         </ul>
       </nav>
     </header>
