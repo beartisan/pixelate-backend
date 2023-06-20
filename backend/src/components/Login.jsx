@@ -57,7 +57,7 @@ export default function Login() {
               />
               {!isValidPassword && <p className="error">Please enter a password</p>}
             </div>
-            <button type="submit">Log-In</button>
+            <button type="submit" className="submit-button">Log-In</button>
           </form>
         </div>
       </div>

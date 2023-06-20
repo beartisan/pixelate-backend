@@ -124,7 +124,7 @@ export default function Signup() {
               </p>
             )}
           </div>
-          <button type="submit">Sign Up</button>
+          <button type="submit" className="submit-button">Sign Up</button>
         </form>
       </div>
     </div>

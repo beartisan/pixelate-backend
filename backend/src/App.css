@@ -12,10 +12,7 @@
 */
 
 /* 1. GENERAL STYLES */
-/* 1. GENERAL STYLES */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -33,17 +30,11 @@ html {
   scroll-behavior: smooth;
 }
 
-h1,
-h2,
-a {
+h1, h2,a {
   font-family: "Press Start 2P", sans-serif;
 }
 
-h3,
-h4,
-h5,
-h6,
-p {
+h3, h4, h5, h6,p {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -68,6 +59,7 @@ p {
   padding: 42px 50px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: white;
 }
 
@@ -82,7 +74,8 @@ p {
 }
 
 #navbar {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .nav-item a {
@@ -194,6 +187,11 @@ button[type="submit"]:hover {
   background-color: var(--pixel-orange);
 }
 
+.signup-form button[type="submit"],
+.login-form button[type="submit"] {
+  margin-left: auto;
+  display: block;
+}
 
 
 
