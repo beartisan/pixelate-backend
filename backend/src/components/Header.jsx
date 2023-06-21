@@ -15,7 +15,7 @@ export default function Header({ handleLoginClick, handleSignupClick }) {
           </li>
           <li className="nav-item">
             <a href="#" onClick={handleSignupClick}>
-              Sign-Up
+              Register
             </a>
           </li>
         </ul>

@@ -187,8 +187,8 @@ button[type="submit"]:hover {
   background-color: var(--pixel-orange);
 }
 
-.signup-form button[type="submit"],
-.login-form button[type="submit"] {
+.signup-form .submit-button,
+.login-form .submit-button {
   margin-left: auto;
   display: block;
 }
